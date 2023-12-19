@@ -10,7 +10,7 @@ import { StoreService } from 'src/app/services/store.service';
 export class FiltersComponent implements OnInit, OnDestroy {
   @Output() showCategory = new EventEmitter<string>();
   categoriesSubscription: Subscription | undefined;
-  categories: Array<string> | undefined;
+  categories = ['Men', 'Women'];
 
   constructor(private storeService: StoreService) { }
 

@@ -8,6 +8,9 @@ import { Product } from 'src/app/models/product.model';
 export class ProductBoxComponent implements OnInit {
   @Input() fullWidthMode = false;
   @Input() product: Product | undefined;
+  @Input() imageUrl: string | undefined;
+  @Input() title: string | undefined;
+  @Input() description: string | undefined;
   @Output() addToCart = new EventEmitter();
   constructor() { }
 
@@ -19,3 +22,4 @@ export class ProductBoxComponent implements OnInit {
   }
 
 }
+
