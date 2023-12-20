@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product.model';
 
-const STORE_BASE_URL = 'https://fakestoreapi.com';
+const STORE_BASE_URL = '';
 
 @Injectable({
   providedIn: 'root'
